@@ -1,0 +1,83 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0; 
+	background-color: #3399ff;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	color: #ffffff;
+}
+h1{
+	text-align: center;
+	top: 30%;
+    left: 43%;
+}
+.bar{
+	width: 500px;
+	height: 100px;
+	background-color: #000000;
+	position: absolute;
+	top: 250px;
+	left: 350px;
+}
+.space{
+	width: 500px;
+	height: 100px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 250px;
+	left: 350px;
+	animation: space 5s infinite ease;
+}
+.text:before{
+	content: '100';
+	color: #3399ff;
+	position: absolute;
+	top: 245px;
+	left: 500px;
+	font-size: 100px;
+	animation-name: text;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes space{
+    0%{
+      width: 0px;
+    }
+    25%{
+      width: 125px;
+    }
+    50%{
+      width: 250px;
+    }
+    75%{
+      width: 375px;
+    }
+    80%{
+      width: 400px;
+    }
+    100%{
+     width: 500px;  
+    }
+}
+
+@keyframes text {
+
+        0% {content: "0%"}
+        10% {content: "10%"}
+        20% {content: "20%"}
+        30% {content: "30%"}
+        40% {content: "40%"}
+        50% {content: "50%"}   
+        60% {content: "60%"}
+        70% {content: "70%"}
+        80% {content: "80%"}
+        90% {content: "90%"}
+        100% {content: "100%"}
+ 
+}
